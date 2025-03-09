@@ -1,0 +1,21 @@
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+.css-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    /* align-items: center; */
+}
+
+.css-board div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

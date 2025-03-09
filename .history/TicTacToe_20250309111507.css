@@ -1,0 +1,115 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    gap: 20px;
+    background-color: #121212; 
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 32px;
+    text-shadow: 0 0 10px #00ffff; 
+}
+
+
+.css-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+
+/* Game Board Cells */
+.css-board div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #444; 
+    background-color: #2a2a2a; 
+    color: #00ffff; /* Neon cyan */
+    font-size: 36px;
+    font-weight: bold;
+    width: 100px; 
+    height: 100px;
+    text-shadow: 0 0 10px #00ffff;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+/* Hover effect on empty cells */
+.css-board div:hover {
+    background-color: #333;
+    box-shadow: 0 0 10px #00ffff;
+    cursor: pointer;
+}
+
+/* Buttons */
+.css-switchButton, .css-resetButton {
+    padding: 12px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    background-color: #ff007f; /* Neon pink */
+    color: white;
+    box-shadow: 0 0 10px #ff007f;
+    transition: transform 0.2s ease-in-out, background-color 0.3s, box-shadow 0.3s;
+}
+
+.css-switchButton:hover, .css-resetButton:hover {
+    background-color: #ff00ff; /* Brighter glow */
+    box-shadow: 0 0 15px #ff00ff;
+    transform: scale(1.1);
+}
+
+.score-board {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #222; /* Dark background */
+    color: rgb(6, 251, 14);
+    text-shadow: 0 0 5px #ffffff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.player-turn {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: #222; /* Dark background */
+    color: white;
+    text-shadow: 0 0 5px #ffffff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s;
+}
+
+.game-board {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: #222; /* Dark background */
+    color: white;
+    text-shadow: 0 0 5px #ffffff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s;
+}
+
+.TicTacToe {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: #222; /* Dark background */
+    color: white;
+    text-shadow: 0 0 5px #ffffff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s;
+}

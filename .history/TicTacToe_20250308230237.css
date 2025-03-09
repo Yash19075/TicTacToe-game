@@ -1,0 +1,40 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    gap: 10px;
+}
+
+.css-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+
+.css-board div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black; /* Add borders to create Tic-Tac-Toe lines */
+    font-size: 24px; /* Make X and O bigger */
+    width: 100px; /* Ensure uniform size */
+    height: 100px;
+}
+
+.css-switchButton, .css-resetButton {
+    padding: 10px 20px;
+    border-radius: 25%;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    background-color: #ff7f7f; /* Light red shade */
+    color: white;
+    transition: transform 0.2s ease-in-out, background-color 0.3s;
+}
+
+.css-switchButton:hover, .css-resetButton:hover {
+    background-color: #ff5252; /* Darker red on hover */
+    transform: scale(1.1);
+}
